@@ -47,7 +47,7 @@ var (
 			utils.RopstenFlag,
 			utils.RinkebyFlag,
 			utils.GoerliFlag,
-			utils.NetworkIdFlag,
+			NetworkIdFlag,
 			bootnodesFlag,
 			nodeURLFlag,
 			nodeFileFlag,
@@ -96,6 +96,10 @@ var (
 	geoipdbFlag = cli.StringFlag{
 		Name:  "geoipdb",
 		Usage: "geoip2 database location",
+	}
+	NetworkIdFlag = &cli.Uint64Flag{
+		Name: "networkid",
+		Usage: "Explicitly set network id (integer)(For testnets: use --ropsten, --rinkeby, --goerli instead)",
 	}
 )
 
