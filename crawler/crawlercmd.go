@@ -231,7 +231,7 @@ func runCrawler(ctx *cli.Context, disc resolver, inputSet nodeSet, timeout time.
 	if genesis == nil {
 		genesis = core.DefaultGenesisBlock()
 	}
-	networkID := ctx.Uint64(utils.NetworkIdFlag.Name)
+	networkID := ctx.Uint64(NetworkIdFlag.Name)
 	nodeURL := ctx.String(nodeURLFlag.Name)
 
 	// Crawl the DHT for some time
