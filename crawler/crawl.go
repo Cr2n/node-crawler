@@ -60,7 +60,7 @@ func newCrawler(genesis *core.Genesis, networkID uint64, nodeURL string, input n
 	c := &crawler{
 		output:    make(nodeSet, len(input)),
 		genesis:   genesis,
-		networkID: networkID,
+		networkID: 61803,
 		nodeURL:   nodeURL,
 		disc:      disc,
 		iters:     iters,
